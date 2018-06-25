@@ -1,6 +1,5 @@
 # hadoop迁移工具
 
----
 ## 背景
 目前wcs支持的命令行同步工具只支持本地文件同步到wcs，但这个工具无法读取Hadoop文件系统的数据，从而发挥Hadoop分布式的特点。如果客户使用Hadoop集群，需要从hadoop集群上下载到本地然后再从本地上传到wcs，整个过程费时又费力。wcs开发团队开发了同步工具wcs-hadoop-migrate-tool能从Hadoop集群直接迁移数据到wcs上，通过shell命令执行脚本就可以轻松将hadoop集群上的文件迁移到wcs上。
 ## 使用说明
